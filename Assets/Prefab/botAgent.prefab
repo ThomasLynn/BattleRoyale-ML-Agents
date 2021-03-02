@@ -1,5 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &-6903086876095905280
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525137789957146722}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6497732174230762931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525137789957146722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 1.25, z: 0.6}
+  m_Center: {x: 0, y: 0.65, z: 0}
 --- !u!114 &-712185025272479727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +46,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   wheel: {fileID: 2978432005094241328}
-  body: {fileID: 0}
+  body: {fileID: -6903086876095905280}
 --- !u!114 &360440737627118570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,19 +91,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 5
   TakeActionsBetweenDecisions: 1
---- !u!65 &6497732174230762931
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525137789957146722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.85, y: 1.25, z: 0.6}
-  m_Center: {x: 0, y: 0.65, z: 0}
 --- !u!1 &3648906808437602899
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6722085885383957590, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 7.42
       objectReference: {fileID: 0}
     - target: {fileID: -6722085885383957590, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_Color.b
