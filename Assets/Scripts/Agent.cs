@@ -24,11 +24,16 @@ public class Agent : Unity.MLAgents.Agent
     private Vector3 lastPos = Vector3.zero;
     private int power = 0;
     private int cooldown = 0;
+    private Vector3 startingPos;
+    private Quaternion startingRot;
+
+    private List<GameObject> bullets = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        startingPos = body.position;
+        startingRot = body.rotation;
     }
 
     // Update is called once per frame
@@ -74,6 +79,7 @@ public class Agent : Unity.MLAgents.Agent
                 bullet.GetComponent<Rigidbody>().velocity = transform.forward * powerMultiplier * power;
                 power -= powerLoss;
                 cooldown = maxCooldown;
+                bullets.Add(bullet);
             }
         }
     }
@@ -128,5 +134,20 @@ public class Agent : Unity.MLAgents.Agent
         {
             actionsOut.DiscreteActions.Array[0] = 0;
         }
+    }
+
+    public override void OnEpisodeBegin()
+    {
+        foreach(GameObject gm in bullets)
+        {
+            Destroy(gm);
+        }
+        bullets.Clear();
+        body.position = startingPos;
+        body.rotation = startingRot;
+        body.velocity = Vector3.zero;
+        body.angularVelocity = Vector3.zero;
+        power = 0;
+        cooldown = 0;
     }
 }

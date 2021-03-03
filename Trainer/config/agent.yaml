@@ -1,5 +1,5 @@
 behaviors:
-    Agent:
+    Agent0:
         trainer_type: ppo
         hyperparameters:
             batch_size: 1000
@@ -7,23 +7,62 @@ behaviors:
         network_settings:
             hidden_units: 200
             num_layers: 2
-#            memory:
-#                memory_size: 128
         reward_signals:
             extrinsic:
                 gamma: 0.99
-#            curiosity:
-#                strength: 0.1
-        self_play:
-            play_against_latest_model_ratio: 0.2
-            window: 20
         time_horizon: 300
         max_steps: 1e6
         threaded: true
         summary_freq: 10000
-        #checkpoint_interval: 40000
         keep_checkpoints: 100
-        #framework: tensorflow
+    Agent1:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 10000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 10000
+        keep_checkpoints: 100
+    Agent2:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 10000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 10000
+        keep_checkpoints: 100
+    Agent3:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 10000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 10000
+        keep_checkpoints: 100
 engine_settings:
   width: 640
   height: 360
