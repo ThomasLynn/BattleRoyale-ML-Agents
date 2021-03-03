@@ -207,6 +207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: TeamId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgent (3)
@@ -563,6 +567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: TeamId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgent (2)
@@ -733,6 +741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: TeamId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgent (1)

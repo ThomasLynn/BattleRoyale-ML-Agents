@@ -7,8 +7,8 @@ behaviors:
         network_settings:
             hidden_units: 200
             num_layers: 2
-            memory:
-                memory_size: 128
+#            memory:
+#                memory_size: 128
         reward_signals:
             extrinsic:
                 gamma: 0.99
@@ -23,7 +23,7 @@ behaviors:
         summary_freq: 10000
         #checkpoint_interval: 40000
         keep_checkpoints: 100
-        framework: tensorflow
+        #framework: tensorflow
 engine_settings:
   width: 640
   height: 360
