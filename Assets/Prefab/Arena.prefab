@@ -277,6 +277,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 8a8bbea2e261a034a98c397485104111, type: 3}
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
       value: AgentFastRed
       objectReference: {fileID: 0}
@@ -630,6 +634,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3036198114403017168}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 7b0069d81acbe5c4fb1201b2f42e7035, type: 3}
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
       value: AgentRapidBlue
       objectReference: {fileID: 0}
@@ -744,6 +752,10 @@ PrefabInstance:
       propertyPath: TeamId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: d2276696d0910f74981e333bb2a27fb7, type: 3}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
       value: AgentHulkGreen
@@ -1050,6 +1062,10 @@ PrefabInstance:
       propertyPath: TeamId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 0caefd8d2edb6a04ebcab75aac57021d, type: 3}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
       value: AgentPowerYellow

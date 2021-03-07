@@ -1,0 +1,80 @@
+behaviors:
+    AgentRapidBlue:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 20000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        self_play:
+            window: 20
+            play_against_latest_model_ratio: 0.3
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 20000
+        keep_checkpoints: 100
+    AgentPowerYellow:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 20000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        self_play:
+            window: 20
+            play_against_latest_model_ratio: 0.3
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 20000
+        keep_checkpoints: 100
+    AgentHulkGreen:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 20000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        self_play:
+            window: 20
+            play_against_latest_model_ratio: 0.3
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 20000
+        keep_checkpoints: 100
+    AgentFastRed:
+        trainer_type: ppo
+        hyperparameters:
+            batch_size: 1000
+            buffer_size: 20000
+        network_settings:
+            hidden_units: 200
+            num_layers: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+        self_play:
+            window: 20
+            play_against_latest_model_ratio: 0.3
+        time_horizon: 300
+        max_steps: 1e6
+        threaded: true
+        summary_freq: 20000
+        keep_checkpoints: 100
+engine_settings:
+  width: 640
+  height: 360
