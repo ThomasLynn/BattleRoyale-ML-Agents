@@ -138,7 +138,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.6, g: 0.50980395, b: 0.101960786, a: 1}
   m_Intensity: 0.5
-  m_Range: 0.5
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: -3764793618925597310}
   maxSpeed: 35
+  timeToLive: 2
 --- !u!1001 &5581941526956003419
 PrefabInstance:
   m_ObjectHideFlags: 0

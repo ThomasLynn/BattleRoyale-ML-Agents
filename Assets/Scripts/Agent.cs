@@ -17,6 +17,7 @@ public class Agent : Unity.MLAgents.Agent
     public float wheelSpeedMultiplier;
     public float botSpeed;
     public float botRotationSpeed;
+    public Color bananaLightColor;
 
     public int maxPower;
     public int powerLoss;
@@ -82,6 +83,7 @@ public class Agent : Unity.MLAgents.Agent
             {
                 GameObject bullet = Instantiate(bulletPrefab, bananaTip.position, bananaTip.rotation, transform) as GameObject;
                 bullet.GetComponent<Rigidbody>().velocity = transform.forward * power;
+                bullet.GetComponent<Light>().color = bananaLightColor;
                 power -= powerLoss;
                 cooldown = maxCooldown;
                 bullets.Add(bullet);
