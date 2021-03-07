@@ -208,6 +208,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: botSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: botRotationSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: botSpeedMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 3
@@ -264,6 +276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2328100595946463974, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 218e9ac000b4e024186aa866cb3565b0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
 --- !u!4 &437847191615222024 stripped
@@ -510,6 +526,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: powerLoss
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: cooldownSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
       value: Agent0
@@ -562,6 +586,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2328100595946463974, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a5449a8dde245c44945bae9d84a43be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
 --- !u!4 &4357886441910382305 stripped
@@ -576,6 +604,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: -6903086876095905280, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -6903086876095905280, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 2
@@ -632,6 +668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2328100595946463974, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a0da49e24d058b44b632d928a494a25, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
 --- !u!4 &5694644110028459829 stripped
@@ -820,6 +860,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073896493695522668}
     m_Modifications:
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: maxPower
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: minPower
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: powerLoss
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: powerMultiplier
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: powerIncreaseSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 1
@@ -876,6 +936,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2328100595946463974, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f216238a8db376942b883d4a487de4ce, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
 --- !u!4 &7934179425917992475 stripped

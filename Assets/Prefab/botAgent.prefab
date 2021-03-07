@@ -44,17 +44,20 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 2000
+  MaxStep: 1000
   wheel: {fileID: 2978432005094241328}
   body: {fileID: -6903086876095905280}
   bananaTip: {fileID: 5101866535939501907}
   bulletPrefab: {fileID: 4735081938174078218, guid: ce051c1b9c8789c4bb88bbd99f07a95b, type: 3}
   wheelSpeedMultiplier: -90
+  botSpeed: 1
+  botRotationSpeed: 80
   maxPower: 50
   powerLoss: 20
   minPower: 10
-  powerMultiplier: 0.7
+  powerIncreaseSpeed: 1
   maxCooldown: 5
+  cooldownSpeed: 1
 --- !u!114 &360440737627118570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +312,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bc16a1c5174844a4b9abd1839f90b493, type: 2}
+    - target: {fileID: -1831483534255073750, guid: 9faae976e34c15f409466654b11721dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1461304994638716399, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -367,7 +374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512243300098982147, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7202271454713460447, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_Materials.Array.data[0]

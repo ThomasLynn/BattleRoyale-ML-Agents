@@ -14,12 +14,15 @@ public class Agent : Unity.MLAgents.Agent
     public GameObject bulletPrefab;
 
     public float wheelSpeedMultiplier;
+    public float botSpeed;
+    public float botRotationSpeed;
 
     public int maxPower;
     public int powerLoss;
     public int minPower;
-    public float powerMultiplier;
+    public int powerIncreaseSpeed;
     public int maxCooldown;
+    public int cooldownSpeed;
 
     private Vector3 lastPos = Vector3.zero;
     private int power = 0;
@@ -53,30 +56,31 @@ public class Agent : Unity.MLAgents.Agent
         {
             move = move.normalized;
         }
+        move = move * botSpeed;
         body.MovePosition( body.position + move * Time.fixedDeltaTime);
 
         // Apply rotation
         Quaternion newAngles = body.rotation;
         Vector3 euler = newAngles.eulerAngles;
-        euler.y += Mathf.Clamp(actionBuffers.ContinuousActions[2], -1f, 1f) * Time.fixedDeltaTime * 45;
+        euler.y += Mathf.Clamp(actionBuffers.ContinuousActions[2], -1f, 1f) * Time.fixedDeltaTime * botRotationSpeed;
         newAngles.eulerAngles = euler;
         body.MoveRotation(newAngles);
 
         // Shoot
         if (power < maxPower)
         {
-            power++;
+            power+= powerIncreaseSpeed;
         }
         if (cooldown > 0)
         {
-            cooldown--;
+            cooldown-= cooldownSpeed;
         }
         if (power > minPower && cooldown <= 0)
         {
             if (actionBuffers.DiscreteActions[0] == 1)
             {
                 GameObject bullet = Instantiate(bulletPrefab, bananaTip.position, bananaTip.rotation, transform) as GameObject;
-                bullet.GetComponent<Rigidbody>().velocity = transform.forward * powerMultiplier * power;
+                bullet.GetComponent<Rigidbody>().velocity = transform.forward * power;
                 power -= powerLoss;
                 cooldown = maxCooldown;
                 bullets.Add(bullet);
