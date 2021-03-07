@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072194819532959360}
   - component: {fileID: 7878873246554429809}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,9 +185,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 814172001358484468, guid: 1737385dbc37fe54894c835460352576, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1737385dbc37fe54894c835460352576, type: 3}
       propertyPath: m_Name
       value: StreetLamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1737385dbc37fe54894c835460352576, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1737385dbc37fe54894c835460352576, type: 3}
       propertyPath: m_TagString

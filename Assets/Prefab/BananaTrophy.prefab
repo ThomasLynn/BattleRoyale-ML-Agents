@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1877532486000641058}
   - component: {fileID: 3288065661978020743}
   - component: {fileID: 740130778809958221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trophy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5476002177884261552}
   - component: {fileID: 5010756844402079150}
   - component: {fileID: 971198153630851993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BananaTrophy
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 1128125135060270226}
   - component: {fileID: 2841991855780316632}
   - component: {fileID: 1609318508220768588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}

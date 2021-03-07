@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073896493695522668}
   - component: {fileID: 1575235209879119411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,11 +266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
-      value: Agent3
+      value: AgentFastRed
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
-      value: botAgent (3)
+      value: botAgentFastRed
       objectReference: {fileID: 0}
     - target: {fileID: 865388928540594904, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_RootOrder
@@ -602,11 +602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
-      value: Agent0
+      value: AgentRapidBlue
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
-      value: botAgent
+      value: botAgentRapidBlue
       objectReference: {fileID: 0}
     - target: {fileID: 865388928540594904, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_RootOrder
@@ -700,11 +700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
-      value: Agent2
+      value: AgentHulkGreen
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
-      value: botAgent (2)
+      value: botAgentHulkGreen
       objectReference: {fileID: 0}
     - target: {fileID: 865388928540594904, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_RootOrder
@@ -981,7 +981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: powerIncreaseSpeed
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
@@ -989,11 +989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_BehaviorName
-      value: Agent1
+      value: AgentPowerYellow
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
-      value: botAgent (1)
+      value: botAgentPowerYellow
       objectReference: {fileID: 0}
     - target: {fileID: 865388928540594904, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_RootOrder

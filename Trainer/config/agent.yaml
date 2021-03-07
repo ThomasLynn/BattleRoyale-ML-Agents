@@ -1,5 +1,5 @@
 behaviors:
-    Agent0:
+    AgentRapidBlue:
         trainer_type: ppo
         hyperparameters:
             batch_size: 1000
@@ -15,7 +15,7 @@ behaviors:
         threaded: true
         summary_freq: 10000
         keep_checkpoints: 100
-    Agent1:
+    AgentPowerYellow:
         trainer_type: ppo
         hyperparameters:
             batch_size: 1000
@@ -31,7 +31,7 @@ behaviors:
         threaded: true
         summary_freq: 10000
         keep_checkpoints: 100
-    Agent2:
+    AgentHulkGreen:
         trainer_type: ppo
         hyperparameters:
             batch_size: 1000
@@ -47,7 +47,7 @@ behaviors:
         threaded: true
         summary_freq: 10000
         keep_checkpoints: 100
-    Agent3:
+    AgentFastRed:
         trainer_type: ppo
         hyperparameters:
             batch_size: 1000
