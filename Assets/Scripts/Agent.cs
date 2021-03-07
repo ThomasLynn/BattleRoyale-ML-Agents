@@ -12,6 +12,7 @@ public class Agent : Unity.MLAgents.Agent
     public Rigidbody body;
     public Transform bananaTip;
     public GameObject bulletPrefab;
+    public ArenaScript arena;
 
     public float wheelSpeedMultiplier;
     public float botSpeed;
@@ -153,5 +154,6 @@ public class Agent : Unity.MLAgents.Agent
         body.angularVelocity = Vector3.zero;
         power = 0;
         cooldown = 0;
+        arena.resetEnv();
     }
 }

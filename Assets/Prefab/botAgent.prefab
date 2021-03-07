@@ -49,9 +49,10 @@ MonoBehaviour:
   body: {fileID: -6903086876095905280}
   bananaTip: {fileID: 5101866535939501907}
   bulletPrefab: {fileID: 4735081938174078218, guid: ce051c1b9c8789c4bb88bbd99f07a95b, type: 3}
+  arena: {fileID: 0}
   wheelSpeedMultiplier: -90
-  botSpeed: 1
-  botRotationSpeed: 80
+  botSpeed: 2
+  botRotationSpeed: 100
   maxPower: 50
   powerLoss: 20
   minPower: 10
@@ -153,7 +154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3648906808437602899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.286, y: 1.0134633, z: 0.255}
+  m_LocalPosition: {x: 0.376, y: 1.0134633, z: 0.454}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 865388928540594904}
@@ -171,7 +172,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9137255, g: 0.91764706, b: 0.12156863, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 1
   m_SpotAngle: 138.1
   m_InnerSpotAngle: 21.80208
@@ -334,11 +335,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 62280e1168ec714438182ee098c0d3fe, type: 2}
     - target: {fileID: -447275898630060098, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.286
+      value: 0.376
+      objectReference: {fileID: 0}
+    - target: {fileID: -447275898630060098, guid: 9faae976e34c15f409466654b11721dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.013463
       objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.255
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: -447275898630060098, guid: 9faae976e34c15f409466654b11721dd, type: 3}
       propertyPath: m_LocalRotation.w
