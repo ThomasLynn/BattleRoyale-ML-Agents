@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &3778188 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4767882145620209347, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+  m_PrefabInstance: {fileID: 7198580271955868917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &119869559 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3036198114403017168, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+  m_PrefabInstance: {fileID: 7198580271955868917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191474232
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arena (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5239467028480570066, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
 --- !u!1 &963194225
@@ -369,6 +383,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e379134560ab45b47b05847e299d14ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1950935482 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7148977392614580205, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+  m_PrefabInstance: {fileID: 7198580271955868917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1955368520 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1174145426733694521, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+  m_PrefabInstance: {fileID: 7198580271955868917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2027671486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,6 +448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arena (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5239467028480570066, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
 --- !u!1001 &7198580271955868917
@@ -433,6 +461,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1442396517426146514, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1955368520}
+    - target: {fileID: 1442396517426146514, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1950935482}
+    - target: {fileID: 1442396517426146514, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[2]
+      value: 
+      objectReference: {fileID: 119869559}
     - target: {fileID: 2073896493695522668, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -477,9 +517,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3826025030840196604, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1955368520}
+    - target: {fileID: 3826025030840196604, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[1]
+      value: 
+      objectReference: {fileID: 3778188}
+    - target: {fileID: 3826025030840196604, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[2]
+      value: 
+      objectReference: {fileID: 119869559}
+    - target: {fileID: 5072715067178417192, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[0]
+      value: 
+      objectReference: {fileID: 3778188}
+    - target: {fileID: 5072715067178417192, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1950935482}
+    - target: {fileID: 5072715067178417192, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[2]
+      value: 
+      objectReference: {fileID: 119869559}
     - target: {fileID: 5239467028480570066, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
       propertyPath: m_Name
       value: Arena
       objectReference: {fileID: 0}
+    - target: {fileID: 8938587978538640321, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1955368520}
+    - target: {fileID: 8938587978538640321, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[1]
+      value: 
+      objectReference: {fileID: 3778188}
+    - target: {fileID: 8938587978538640321, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}
+      propertyPath: otherBots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1950935482}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d7c152991e5f54a9f83de1ecc42887, type: 3}

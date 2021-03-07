@@ -13,6 +13,7 @@ public class Agent : Unity.MLAgents.Agent
     public Transform bananaTip;
     public GameObject bulletPrefab;
     public ArenaScript arena;
+    public List<Rigidbody> otherBots;
 
     public float wheelSpeedMultiplier;
     public float botSpeed;
@@ -31,6 +32,8 @@ public class Agent : Unity.MLAgents.Agent
     private int cooldown = 0;
     private Vector3 startingPos;
     private Quaternion startingRot;
+    private List<Vector3> previousPosOtherBots;
+    private float previousTime;
 
     private List<GameObject> bullets = new List<GameObject>();
 
@@ -89,6 +92,58 @@ public class Agent : Unity.MLAgents.Agent
                 bullets.Add(bullet);
             }
         }
+    }
+
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        float x = body.rotation.eulerAngles.x;
+        float z = body.rotation.eulerAngles.z;
+        if (x > 180f)
+        {
+            x -= 360f;
+        }
+        x /= 90f;
+        if (z > 180f)
+        {
+            z -= 360f;
+        }
+        z /= 90f;
+        //print("x " + x + " z " + z);
+        sensor.AddObservation(Mathf.Atan(x));
+        sensor.AddObservation(Mathf.Atan(z));
+
+        if (previousPosOtherBots == null)
+        {
+            previousTime = Time.time;
+            previousPosOtherBots = new List<Vector3>();
+            foreach (Rigidbody rb in otherBots)
+            {
+                previousPosOtherBots.Add(rb.position);
+                sensor.AddObservation(Vector3.zero);
+            }
+        }
+        else
+        {
+            float currentTime = Time.time;
+            for (int i=0;i<otherBots.Count;i++)
+            {
+                // rescaled relative (rotated) velocity between -1 and 1
+                Vector3 v = transform.InverseTransformDirection(otherBots[i].position - previousPosOtherBots[i]) / (currentTime - previousTime) / 4f;
+                previousPosOtherBots[i] = otherBots[i].position;
+                //print("rel v " + v);
+                sensor.AddObservation(v);
+            }
+            previousTime = currentTime;
+        }
+        for (int i = 0; i < otherBots.Count; i++)
+        {
+            // rescaled relative position between -1 and 1
+            // 20 is the size of the arena, uses sqrt(2) because euclidean space goes brrr
+            Vector3 p = transform.InverseTransformDirection(otherBots[i].position - transform.parent.position) / (20f / Mathf.Sqrt(2));
+            //print("rel p " + p + " mag " + p.magnitude);
+            sensor.AddObservation(p);
+        }
+
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

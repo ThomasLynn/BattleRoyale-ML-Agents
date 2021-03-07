@@ -50,6 +50,10 @@ MonoBehaviour:
   bananaTip: {fileID: 5101866535939501907}
   bulletPrefab: {fileID: 4735081938174078218, guid: ce051c1b9c8789c4bb88bbd99f07a95b, type: 3}
   arena: {fileID: 0}
+  otherBots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   wheelSpeedMultiplier: -90
   botSpeed: 2
   botRotationSpeed: 100
@@ -73,7 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 0
+    VectorObservationSize: 20
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 3
