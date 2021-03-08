@@ -74,11 +74,11 @@ public class Agent : Unity.MLAgents.Agent
         // Shoot
         if (power < maxPower)
         {
-            power+= powerIncreaseSpeed;
+            power = Mathf.Min(maxPower, power + powerIncreaseSpeed);
         }
         if (cooldown > 0)
         {
-            cooldown-= cooldownSpeed;
+            cooldown = Mathf.Max(0, cooldown - cooldownSpeed);
         }
         if (power > minPower && cooldown <= 0)
         {
@@ -111,6 +111,12 @@ public class Agent : Unity.MLAgents.Agent
         //print("x " + x + " z " + z);
         sensor.AddObservation(Mathf.Atan(x));
         sensor.AddObservation(Mathf.Atan(z));
+        sensor.AddObservation(power >= maxPower);
+        sensor.AddObservation(power / maxPower);
+        sensor.AddObservation(power >= minPower);
+        sensor.AddObservation(cooldown == 0);
+        sensor.AddObservation(cooldown / maxCooldown);
+
 
         if (previousPosOtherBots == null)
         {
@@ -138,10 +144,12 @@ public class Agent : Unity.MLAgents.Agent
         for (int i = 0; i < otherBots.Count; i++)
         {
             // rescaled relative position between -1 and 1
-            // 20 is the size of the arena, uses sqrt(2) because euclidean space goes brrr
-            Vector3 p = transform.InverseTransformDirection(otherBots[i].position - transform.parent.position) / (20f / Mathf.Sqrt(2));
-            //print("rel p " + p + " mag " + p.magnitude);
+            // 20 is the size of the arena
+            Vector3 p = transform.InverseTransformPoint(otherBots[i].position) / 20f;
+            //print("rel p " + p + " mag " + (p.magnitude / Mathf.Sqrt(2)));
             sensor.AddObservation(p);
+            // uses sqrt(2) to rescale magnitude between 0.0-1.0 because euclidean space goes brrr
+            sensor.AddObservation(p.magnitude / Mathf.Sqrt(2));
         }
 
     }

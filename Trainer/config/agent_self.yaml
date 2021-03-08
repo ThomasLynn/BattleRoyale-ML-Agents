@@ -2,7 +2,7 @@ behaviors:
     AgentRapidBlue:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 1000
+            batch_size: 2000
             buffer_size: 20000
         network_settings:
             hidden_units: 200
@@ -21,7 +21,7 @@ behaviors:
     AgentPowerYellow:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 1000
+            batch_size: 2000
             buffer_size: 20000
         network_settings:
             hidden_units: 200
@@ -40,7 +40,7 @@ behaviors:
     AgentHulkGreen:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 1000
+            batch_size: 2000
             buffer_size: 20000
         network_settings:
             hidden_units: 200
@@ -59,7 +59,7 @@ behaviors:
     AgentFastRed:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 1000
+            batch_size: 2000
             buffer_size: 20000
         network_settings:
             hidden_units: 200
