@@ -30,16 +30,23 @@ public class BananaBulletScript : MonoBehaviour
     {
         if (collision.transform.tag == "Bot")
         {
+            Agent own = transform.parent.GetComponent<Agent>();
+            Agent enemy = collision.transform.GetComponent<Agent>();
             if (collision.transform != transform.parent)
             {
                 //print("hit enemy");
-                transform.parent.GetComponent<Agent>().AddReward(0.05f);
-                collision.transform.GetComponent<Agent>().AddReward(-0.05f);
+                if (enemy.points > 0)
+                {
+                    enemy.AddPoints(-1);
+                    own.AddPoints(1);
+                    own.AddReward(0.01f);
+                    enemy.AddReward(-0.01f);
+                }
             }
             else
             {
                 //print("hit self");
-                transform.parent.GetComponent<Agent>().AddReward(-0.05f);
+                own.AddReward(-0.01f);
             }
         }
     }

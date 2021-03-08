@@ -14,6 +14,7 @@ public class Agent : Unity.MLAgents.Agent
     public GameObject bulletPrefab;
     public ArenaScript arena;
     public List<Rigidbody> otherBots;
+    public List<Agent> otherBotAgents;
 
     public float wheelSpeedMultiplier;
     public float botSpeed;
@@ -26,6 +27,12 @@ public class Agent : Unity.MLAgents.Agent
     public int powerIncreaseSpeed;
     public int maxCooldown;
     public int cooldownSpeed;
+    public int maxPoints;
+
+    [HideInInspector]
+    public int points;
+    [HideInInspector]
+    public int oldPoints = -1;
 
     private Vector3 lastPos = Vector3.zero;
     private int power = 0;
@@ -53,8 +60,41 @@ public class Agent : Unity.MLAgents.Agent
         lastPos = transform.position;
     }
 
+    public void AddPoints(int newPoints)
+    {
+        points += newPoints;
+        oldPoints = points;
+    }
+
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
+        if (StepCount >= MaxStep - 2)
+        {
+            //print("ending manually " + points + " " +oldPoints);
+            // worst score to best from -1 to 1
+            // used in self-play to calculate elo score
+            //AddReward(points / (maxPoints*2) - 1f);
+            float score = -1;
+            foreach (Agent a in otherBotAgents)
+            {
+                //print("a loop " + points + " " + a.oldPoints + " " + a.gameObject.name);
+                if (a.oldPoints < points)
+                {
+                    score += 2f / 3f;
+                }
+                else if (a.oldPoints == points)
+                {
+                    score += 1f / 3f;
+                }
+            }
+            //print("final score " + score + " " + gameObject.name);
+            AddReward(score);
+            EndEpisode();
+        }
+        if (StepCount >= MaxStep - 50)
+        {
+            oldPoints = points;
+        }
         // Apply linear movement
         Vector3 move = actionBuffers.ContinuousActions[0] * transform.right + actionBuffers.ContinuousActions[1] * transform.forward;
         if (move.magnitude > 1)
@@ -109,6 +149,7 @@ public class Agent : Unity.MLAgents.Agent
         }
         z /= 90f;
         //print("x " + x + " z " + z);
+        //print(x + " " + z + " " + power + " " + maxPower + " " + minPower + " " + cooldown + " " + maxCooldown);
         sensor.AddObservation(Mathf.Atan(x));
         sensor.AddObservation(Mathf.Atan(z));
         sensor.AddObservation(power >= maxPower);
@@ -134,10 +175,19 @@ public class Agent : Unity.MLAgents.Agent
             for (int i=0;i<otherBots.Count;i++)
             {
                 // rescaled relative (rotated) velocity between -1 and 1
-                Vector3 v = transform.InverseTransformDirection(otherBots[i].position - previousPosOtherBots[i]) / (currentTime - previousTime) / 4f;
+                Vector3 v = transform.InverseTransformVector(otherBots[i].position - previousPosOtherBots[i]) / (currentTime - previousTime) / 4f;
                 previousPosOtherBots[i] = otherBots[i].position;
-                //print("rel v " + v);
-                sensor.AddObservation(v);
+                //print("rel v " + v + otherBots[i].position +" "+ previousPosOtherBots[i]+" "+ currentTime + " " + previousTime + transform);
+                if (float.IsNaN(v.magnitude) || v.magnitude > 10)
+                {
+                    //print("is nan");
+                    sensor.AddObservation(Vector3.zero);
+                }
+                else
+                {
+                    sensor.AddObservation(v);
+                }
+                
             }
             previousTime = currentTime;
         }
@@ -219,6 +269,11 @@ public class Agent : Unity.MLAgents.Agent
         body.angularVelocity = Vector3.zero;
         power = 0;
         cooldown = 0;
+        points = maxPoints;
+        if (oldPoints == -1)
+        {
+            oldPoints = points;
+        }
         arena.resetEnv();
     }
 }
