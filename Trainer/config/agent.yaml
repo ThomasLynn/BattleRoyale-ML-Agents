@@ -2,8 +2,8 @@ behaviors:
     Agent:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 2000
-            buffer_size: 20000
+            batch_size: 2500
+            buffer_size: 50000
         network_settings:
             hidden_units: 500
             num_layers: 3
@@ -13,10 +13,12 @@ behaviors:
         self_play:
             window: 20
             play_against_latest_model_ratio: 0.3
+            save_steps: 50000
+            swap_steps: 150000
         time_horizon: 300
-        max_steps: 1e6
+        max_steps: 1e7
         threaded: true
-        summary_freq: 20000
+        summary_freq: 50000
 engine_settings:
   width: 640
   height: 360

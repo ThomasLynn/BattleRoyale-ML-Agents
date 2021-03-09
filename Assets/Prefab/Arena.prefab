@@ -292,10 +292,6 @@ PrefabInstance:
       propertyPath: TeamId
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgentFastRed
@@ -660,10 +656,6 @@ PrefabInstance:
       propertyPath: otherBotAgents.Array.data[2]
       value: 
       objectReference: {fileID: 8938587978538640321}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgentRapidBlue
@@ -797,10 +789,6 @@ PrefabInstance:
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_Model
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
@@ -1114,10 +1102,6 @@ PrefabInstance:
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_Model
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
