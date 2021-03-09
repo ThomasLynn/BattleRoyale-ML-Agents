@@ -625,14 +625,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575235209879119411}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: powerLoss
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: cooldownSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: bananaLightColor.b
       value: 0.8980392
       objectReference: {fileID: 0}
@@ -757,10 +749,6 @@ PrefabInstance:
     - target: {fileID: -6903086876095905280, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Mass
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: -6903086876095905280, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_Constraints
-      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: arena
@@ -1084,18 +1072,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: maxPower
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: minPower
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: powerLoss
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: powerMultiplier
       value: 1.4
       objectReference: {fileID: 0}
@@ -1110,10 +1086,6 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: bananaLightColor.r
       value: 0.8784314
-      objectReference: {fileID: 0}
-    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: powerIncreaseSpeed
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[0]
