@@ -39,8 +39,8 @@ public class BananaBulletScript : MonoBehaviour
                 {
                     enemy.AddPoints(-1);
                     own.AddPoints(1);
-                    own.AddReward(0.05f);
-                    enemy.AddReward(-0.05f);
+                    own.AddReward(0.2f);
+                    enemy.AddReward(-0.2f);
                 }
             }
             else

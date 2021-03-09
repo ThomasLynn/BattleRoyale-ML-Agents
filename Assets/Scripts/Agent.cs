@@ -34,10 +34,12 @@ public class Agent : Unity.MLAgents.Agent
     public int points;
     [HideInInspector]
     public int oldPoints = -1;
+    [HideInInspector]
+    public int power = 0;
+    [HideInInspector]
+    public int cooldown = 0;
 
     private Vector3 lastPos = Vector3.zero;
-    private int power = 0;
-    private int cooldown = 0;
     private Vector3 startingPos;
     private Quaternion startingRot;
     private List<Vector3> previousPosOtherBots;
@@ -155,6 +157,10 @@ public class Agent : Unity.MLAgents.Agent
         sensor.AddObservation(teamId == 1);
         sensor.AddObservation(teamId == 2);
         sensor.AddObservation(teamId == 3);
+        
+        sensor.AddObservation(botSpeed / 4f);
+        sensor.AddObservation(botRotationSpeed / 150f);
+
         sensor.AddObservation(Mathf.Atan(x));
         sensor.AddObservation(Mathf.Atan(z));
         sensor.AddObservation(power >= maxPower);
@@ -206,7 +212,14 @@ public class Agent : Unity.MLAgents.Agent
             // uses sqrt(2) to rescale magnitude between 0.0-1.0 because euclidean space goes brrr
             sensor.AddObservation(p.magnitude / Mathf.Sqrt(2));
         }
-
+        for(int i=0;i< otherBotAgents.Count; i++)
+        {
+            sensor.AddObservation(otherBotAgents[i].power >= otherBotAgents[i].maxPower);
+            sensor.AddObservation(otherBotAgents[i].power / otherBotAgents[i].maxPower);
+            sensor.AddObservation(otherBotAgents[i].power >= otherBotAgents[i].minPower);
+            sensor.AddObservation(otherBotAgents[i].cooldown == 0);
+            sensor.AddObservation(otherBotAgents[i].cooldown / otherBotAgents[i].maxCooldown);
+        }
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

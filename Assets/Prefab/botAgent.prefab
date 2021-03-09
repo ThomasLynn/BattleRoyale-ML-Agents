@@ -72,6 +72,8 @@ MonoBehaviour:
   maxPoints: 5
   points: 5
   oldPoints: -1
+  power: 0
+  cooldown: 0
 --- !u!114 &360440737627118570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 32
+    VectorObservationSize: 49
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 3
@@ -118,10 +120,10 @@ MonoBehaviour:
   m_DetectableTags:
   - Wall
   - Obstacle
-  m_RaysPerDirection: 8
+  m_RaysPerDirection: 4
   m_MaxRayDegrees: 160
   m_SphereCastRadius: 0.5
-  m_RayLength: 20
+  m_RayLength: 15
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 64
