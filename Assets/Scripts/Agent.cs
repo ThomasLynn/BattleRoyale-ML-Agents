@@ -16,6 +16,7 @@ public class Agent : Unity.MLAgents.Agent
     public List<Rigidbody> otherBots;
     public List<Agent> otherBotAgents;
 
+    public int teamId;
     public float wheelSpeedMultiplier;
     public float botSpeed;
     public float botRotationSpeed;
@@ -150,6 +151,10 @@ public class Agent : Unity.MLAgents.Agent
         z /= 90f;
         //print("x " + x + " z " + z);
         //print(x + " " + z + " " + power + " " + maxPower + " " + minPower + " " + cooldown + " " + maxCooldown);
+        sensor.AddObservation(teamId == 0);
+        sensor.AddObservation(teamId == 1);
+        sensor.AddObservation(teamId == 2);
+        sensor.AddObservation(teamId == 3);
         sensor.AddObservation(Mathf.Atan(x));
         sensor.AddObservation(Mathf.Atan(z));
         sensor.AddObservation(power >= maxPower);

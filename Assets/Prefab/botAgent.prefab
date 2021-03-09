@@ -58,6 +58,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  teamId: 0
   wheelSpeedMultiplier: -90
   botSpeed: 2
   botRotationSpeed: 100
@@ -70,6 +71,7 @@ MonoBehaviour:
   cooldownSpeed: 1
   maxPoints: 5
   points: 5
+  oldPoints: -1
 --- !u!114 &360440737627118570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 28
+    VectorObservationSize: 32
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 3

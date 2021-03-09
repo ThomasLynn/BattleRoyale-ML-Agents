@@ -237,6 +237,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575235209879119411}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: teamId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: botSpeed
       value: 4
       objectReference: {fileID: 0}
@@ -263,27 +267,27 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[0]
       value: 
-      objectReference: {fileID: 1174145426733694521}
+      objectReference: {fileID: 7148977392614580205}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[1]
       value: 
-      objectReference: {fileID: 4767882145620209347}
+      objectReference: {fileID: 1174145426733694521}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[2]
       value: 
-      objectReference: {fileID: 7148977392614580205}
+      objectReference: {fileID: 4767882145620209347}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[0]
       value: 
-      objectReference: {fileID: 5072715067178417192}
+      objectReference: {fileID: 3826025030840196604}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[1]
       value: 
-      objectReference: {fileID: 1442396517426146514}
+      objectReference: {fileID: 5072715067178417192}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[2]
       value: 
-      objectReference: {fileID: 3826025030840196604}
+      objectReference: {fileID: 1442396517426146514}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 3
@@ -291,10 +295,6 @@ PrefabInstance:
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_BehaviorName
-      value: AgentFastRed
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
@@ -672,10 +672,6 @@ PrefabInstance:
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_BehaviorName
-      value: AgentRapidBlue
-      objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
       value: botAgentRapidBlue
@@ -771,6 +767,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575235209879119411}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: teamId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: bananaLightColor.b
       value: 0.23529412
       objectReference: {fileID: 0}
@@ -785,7 +785,7 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[0]
       value: 
-      objectReference: {fileID: 1174145426733694521}
+      objectReference: {fileID: 3036198114403017168}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[1]
       value: 
@@ -793,11 +793,11 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[2]
       value: 
-      objectReference: {fileID: 3036198114403017168}
+      objectReference: {fileID: 1174145426733694521}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[0]
       value: 
-      objectReference: {fileID: 5072715067178417192}
+      objectReference: {fileID: 8938587978538640321}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[1]
       value: 
@@ -805,7 +805,7 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[2]
       value: 
-      objectReference: {fileID: 8938587978538640321}
+      objectReference: {fileID: 5072715067178417192}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 2
@@ -813,10 +813,6 @@ PrefabInstance:
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_BehaviorName
-      value: AgentHulkGreen
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name
@@ -1084,6 +1080,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575235209879119411}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
+      propertyPath: teamId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: maxPower
       value: 100
       objectReference: {fileID: 0}
@@ -1122,11 +1122,11 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[1]
       value: 
-      objectReference: {fileID: 7148977392614580205}
+      objectReference: {fileID: 3036198114403017168}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBots.Array.data[2]
       value: 
-      objectReference: {fileID: 3036198114403017168}
+      objectReference: {fileID: 7148977392614580205}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[0]
       value: 
@@ -1134,11 +1134,11 @@ PrefabInstance:
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[1]
       value: 
-      objectReference: {fileID: 3826025030840196604}
+      objectReference: {fileID: 8938587978538640321}
     - target: {fileID: -712185025272479727, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: otherBotAgents.Array.data[2]
       value: 
-      objectReference: {fileID: 8938587978538640321}
+      objectReference: {fileID: 3826025030840196604}
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: TeamId
       value: 1
@@ -1146,10 +1146,6 @@ PrefabInstance:
     - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 360440737627118570, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
-      propertyPath: m_BehaviorName
-      value: AgentPowerYellow
       objectReference: {fileID: 0}
     - target: {fileID: 525137789957146722, guid: 5d65d10bafcaa624e9595c378bf67637, type: 3}
       propertyPath: m_Name

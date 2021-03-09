@@ -8,5 +8,6 @@ Logs/*
 Packages/*
 Standalone/*
 Standalone2/*
+Standalone3/*
 Temp/*
 *.csv
