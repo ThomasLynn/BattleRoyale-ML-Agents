@@ -207,7 +207,16 @@ public class Agent : Unity.MLAgents.Agent
             // rescaled relative position between -1 and 1
             // 20 is the size of the arena
             Vector3 p = transform.InverseTransformPoint(otherBots[i].position) / 20f;
-            //print("rel p " + p + " mag " + (p.magnitude / Mathf.Sqrt(2)));
+            // add softmaxed unscaled relative position vector (that sentence sounds pretty fancy, eh?)
+            sensor.AddObservation(Mathf.Atan(p.x));
+            sensor.AddObservation(Mathf.Atan(p.y));
+            sensor.AddObservation(Mathf.Atan(p.z));
+
+            // add direction to other bot
+            sensor.AddObservation(p.normalized);
+
+            p = p / 20f;
+            // add relative position vector
             sensor.AddObservation(p);
             // uses sqrt(2) to rescale magnitude between 0.0-1.0 because euclidean space goes brrr
             sensor.AddObservation(p.magnitude / Mathf.Sqrt(2));

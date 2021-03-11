@@ -14,7 +14,7 @@ behaviors:
             window: 20
             play_against_latest_model_ratio: 0.3
             save_steps: 50000
-            swap_steps: 150000
+            swap_steps: 30000
         time_horizon: 300
         max_steps: 1e7
         threaded: true
