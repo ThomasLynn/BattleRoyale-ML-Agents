@@ -83,11 +83,11 @@ public class Agent : Unity.MLAgents.Agent
                 //print("a loop " + points + " " + a.oldPoints + " " + a.gameObject.name);
                 if (a.oldPoints < points)
                 {
-                    score += 2f / 3f;
+                    score += 2;
                 }
                 else if (a.oldPoints == points)
                 {
-                    score += 1f / 3f;
+                    score += 1;
                 }
             }
             //print("final score " + score + " " + gameObject.name);

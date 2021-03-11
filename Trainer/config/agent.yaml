@@ -2,7 +2,7 @@ behaviors:
     Agent:
         trainer_type: ppo
         hyperparameters:
-            batch_size: 2500
+            batch_size: 5000
             buffer_size: 50000
         network_settings:
             hidden_units: 500

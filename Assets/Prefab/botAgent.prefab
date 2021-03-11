@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 49
+    VectorObservationSize: 25
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 3
@@ -96,7 +96,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 8dc2f595a974ff142b9987485813897f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Agent
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_DetectableTags:
   - Wall
   - Obstacle
+  - Cover
   m_RaysPerDirection: 4
   m_MaxRayDegrees: 160
   m_SphereCastRadius: 0.5
