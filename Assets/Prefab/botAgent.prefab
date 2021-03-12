@@ -96,7 +96,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: c8065a8616178524aad0788331751e3d, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 58eb417158750004abb9ba8c3fd6e408, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Agent
@@ -159,15 +159,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: RayPerceptionSensor
-  m_DetectableTags: []
+  m_SensorName: RayPerceptionSensorLower
+  m_DetectableTags:
+  - Wall
+  - Obstacle
+  - Cover
   m_RaysPerDirection: 8
   m_MaxRayDegrees: 150
   m_SphereCastRadius: 0.1
-  m_RayLength: 20
+  m_RayLength: 15
   m_RayLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 64
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
