@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 632150229}
   - component: {fileID: 632150228}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: YellowScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96, y: -100}
+  m_AnchoredPosition: {x: -297.28, y: 156.4}
   m_SizeDelta: {x: 666.3, y: 175.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632150228
@@ -267,8 +267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetAgent: {fileID: 2088923264}
-  startingText: 'Yellow: '
+  startingText: 'Yellow Score: '
   text: {fileID: 632150229}
+  trans: {fileID: 632150227}
+  offset: {x: 375.59, y: -172}
 --- !u!114 &632150229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +304,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Yellow: 0'
+  m_Text: 'Yellow Score: '
 --- !u!222 &632150230
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -363,7 +365,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 57.1
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -420,7 +422,7 @@ GameObject:
   - component: {fileID: 1112652361}
   - component: {fileID: 1112652360}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BlueScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,7 +444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96, y: -50}
+  m_AnchoredPosition: {x: -297.28, y: 199.1}
   m_SizeDelta: {x: 666.3, y: 175.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112652360
@@ -458,8 +460,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetAgent: {fileID: 1705443991}
-  startingText: 'Blue: '
+  startingText: 'Blue Score: '
   text: {fileID: 1112652361}
+  trans: {fileID: 1112652359}
+  offset: {x: 375.59, y: -122}
 --- !u!114 &1112652361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Blue: 0'
+  m_Text: 'Blue Score: '
 --- !u!222 &1112652362
 CanvasRenderer:
   m_ObjectHideFlags: 0
