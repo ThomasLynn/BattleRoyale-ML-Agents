@@ -252,7 +252,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -297.28, y: 156.4}
-  m_SizeDelta: {x: 666.3, y: 175.73}
+  m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632150228
 MonoBehaviour:
@@ -270,7 +270,7 @@ MonoBehaviour:
   startingText: 'Yellow Score: '
   text: {fileID: 632150229}
   trans: {fileID: 632150227}
-  offset: {x: 375.59, y: -172}
+  offset: {x: 550, y: -200}
 --- !u!114 &632150229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,11 +293,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 99
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -445,7 +445,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -297.28, y: 199.1}
-  m_SizeDelta: {x: 666.3, y: 175.73}
+  m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112652360
 MonoBehaviour:
@@ -463,7 +463,7 @@ MonoBehaviour:
   startingText: 'Blue Score: '
   text: {fileID: 1112652361}
   trans: {fileID: 1112652359}
-  offset: {x: 375.59, y: -122}
+  offset: {x: 550, y: -130}
 --- !u!114 &1112652361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,11 +486,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 99
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
